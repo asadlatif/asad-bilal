@@ -1,0 +1,216 @@
+.qsubmitbtn{
+    border: none;
+    float:right;
+}
+
+.textqpage textarea.form-control.autosizeme {
+    resize: none !important;
+}
+
+.page-header.navbar .page-logo .logo-default {
+    margin: 9px 0 0px -9px;
+    width: 175px;
+}
+
+.sampleTestPage ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.sampleTestPage ul.topnav li {
+    float: left;
+}
+
+.sampleTestPage ul.topnav li a.active {
+    background-color: #4CAF50;
+}
+.sampleTestPage ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.question.current {
+    display: block;
+}
+
+.queSection .bg-grey-steel {
+    background: none !important;
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.19);
+}
+
+.queSection .mt-element-ribbon {
+    margin-bottom: 0;
+}
+
+.queSection .mt-element-ribbon .ribbon-content {
+    padding: 15px;
+    font-size: 21px;
+}
+
+.queSection .mt-checkbox-list, .mt-radio-list {
+    padding: 0;
+}
+
+.SingleCheckbox tr {
+    margin-bottom: 7px;
+    display: block;
+}
+
+.SingleCheckbox input[type=radio] {
+    transform: scale(2);
+    margin: 9px;
+}
+
+.SingleCheckbox label {
+    color: #000;
+    margin: 0px 0px 0 11px;
+    font-size: 17px;
+}
+
+.npBtn:hover {
+    color: #FFF;
+    background-color: #1c699f;
+    border-color: #15527c;
+}
+
+.npBtn {
+    background-color: #3598dc;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-color: #3598dc;
+}
+
+html input.npBtn[disabled] {
+    cursor: pointer;
+}
+
+.sampleTestPage ul.topnav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+p.copyright {
+    margin-left: 8px;
+}
+
+@media(min-width: 320px) and (max-width: 767px){
+    
+.loginLogo{
+        width: 200px;
+}
+
+.login .content .rememberme {
+    margin-left: 0;
+    display: block;
+    margin-top: 10px;
+}
+
+.login .content .forget-password {
+    float: none;
+}
+
+.login .content {
+    padding: 10px 15px 15px;
+}
+
+}
+
+.progress.pgStyle {
+    background-color: #E0E0E0;
+}
+
+.pgStyle .sr-only {
+    overflow: visible;
+    clip: unset;
+}
+
+.portlet.light.bordered {
+    border: 1px solid #00000038!important;
+}
+
+.table-bordered, .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+    border: 1px solid #00000038;
+}
+
+.form .form-section, .portlet-form .form-section {
+    border-bottom: 1px solid #00000038;
+}
+
+.breadcrumbs.breadcrumbsRibbon .mt-element-ribbon.bg-grey-steel {
+    display: inline-block;
+}
+
+.portlet.light.bordered>.portlet-title {
+    border-bottom: 1px solid #00000038;
+}
+
+.breadcrumbs.breadcrumbsRibbon .mt-element-ribbon {
+    margin-bottom: 0;
+}
+
+.breadcrumbs.breadcrumbsRibbon .mt-element-ribbon .ribbon-content {
+    padding: 15px 25px;
+    font-family: monospace;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.breadcrumbs.breadcrumbsRibbon h2.ribbon-content {
+    display: inline-block;
+}
+
+@media (min-width: 992px){
+.breadcrumbs.breadcrumbsRibbon .mt-element-ribbon.bg-grey-steel {
+    margin: 0;
+}
+}
+
+@media (min-width: 768px){
+.breadcrumbs.breadcrumbsRibbon .mt-element-ribbon.bg-grey-steel {
+    margin: 0 -15px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css?family=Bad+Script|Roboto:100,300,400,500,700,900&subset=cyrillic');
+
+body, h1, h2, h3, h4, h5, h6 {
+	font-family: 'Bad Script', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+.breadcrumbs.breadcrumbsRibbon .mt-element-ribbon {
+    margin-bottom: 0;
+}
+
+.breadcrumbs.breadcrumbsRibbon h2.ribbon-content {
+    display: inline-block;
+}
+
+.breadcrumbs.breadcrumbsRibbon .mt-element-ribbon.bg-grey-steel {
+    display: inline-block;
+}
+
+.breadcrumbs.breadcrumbsRibbon .mt-element-ribbon .ribbon-content {
+    padding: 15px 25px;
+    font-family: 'Bad Script', cursive;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.breadcrumbs.breadcrumbsRibbon {
+    margin-bottom: 15px;
+}
+
+.insStart h1 {
+    font-weight: 300;
+    color: #303F9F;
+}
+
+.insStart h3 {
+    border-bottom: 1px solid #9E9E9E;
+    padding: 5px 0;
+}
+
+.insStart li {
+    list-style: circle;
+    margin: 9px 0;
+}
+
+.insStart p {
+    padding: 7px 0;
+}
+
+
+
+/*temp-css*/
+
+a.temp {
+    float: right;
+    display: inline-block;
+    background-color: #32c5d2;
+    padding: 5px 15px;
+    color: #fff;
+}
+
+.profilePage .form-horizontal .form-group .form-control-static {
+    color: #757575;
+}
+
+.sampleTest>.portlet-title>.caption>i {
+    margin-top: 2px;
+}
+
+.question {
+  display: none;
+  }
+
+.question.current {
+  display: block;
+}
+
+.npBtn {
+    background-color: #3598dc;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-color: #3598dc;
+}
+
+.npBtn:hover {
+    color: #FFF;
+    background-color: #1c699f;
+    border-color: #15527c;
+}
+
+a.npBtn {
+    background-color: #32c5d2;
+    border-color: #32c5d2;
+}
+
+a.npBtn:hover {
+    background-color: #1f858e;
+    border-color: #18666d;
+    text-decoration: none;
+}
+
+.feedRibbon {
+    margin: auto;
+    border-top: 30px solid #cc0000;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #b20000;
+    border-left: 30px solid transparent;
+    width: 350px;
+    min-width: 300px;
+    max-width: 70%;
+}
+
+.feedRibbon p {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    font-family: Helvetica;
+    font-weight: bold;
+    margin: 0 0 0 0;
+    line-height: 0px;
+    letter-spacing: 2px;
+}
+
+.feedbackPage .portlet.light.portlet-fit>.portlet-body {
+    padding: 0;
+}
+
+.feedbackPage .portlet {
+    margin-bottom: 0px;
+}
+
+p.feedDetails {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 49px;
+    font-family: cursive;
+    color: #424242;
+}
+
+.ffCenter{
+    float:right;
+}
+
+.font-purple-sharp.center {
+    min-height: 45px;
+    display: inline-flex;
+    align-items: flex-end;
+}
+
+.faceMocion {
+    height: auto !important;
+}
+
+.font-purple-sharp {
+    color: #4A148C!important;
+}
+
+.page-header .navbar .navbar-nav>li>a>i {
+    top: 1px;
+}
+
+#queMenu {
+    background: #45b6af;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    -1%   {background: #45b6af;}
+    25%  {background: #9e9e9e;}
+    50%  {background: #009688;}
+    75%  {background: #3f51b5;}
+    100% {background: #45b6af;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    0%   {background: #45b6af;}
+    25%  {background: #9e9e9e;}
+    50%  {background: #009688;}
+    75%  {background: #3f51b5;}
+    100% {background: #45b6af;}
+}
+
+.queSection .mt-element-ribbon {
+    margin-bottom: 0;
+}
+
+.queSection .mt-element-ribbon .ribbon-content {
+    padding: 15px;
+    font-size: 21px;
+}
+
+.queSection .mt-checkbox-list, .mt-radio-list {
+    padding: 0;
+}
+
+.queSection .bg-grey-steel {
+    background: none !important;
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.19);
+}
+
+button.btn.btn-sm.md-skip.dropdown-toggle {
+    background: #263238;
+}
+
+.page-header .navbar .topbar-actions .btn-group-img .btn:hover {
+    background: #333c436b;
+}
+
+
+
+/*Media-Quries*/
+
+@media (max-width: 480px){
+
+.font-purple-sharp.center {
+    margin-bottom: 25px;
+}
+
+}
+
+@media (max-width: 767px){
+
+.login .content {
+    width: 100%;
+}
+
+a.temp {
+    margin-bottom: 10px;
+}
+
+.breadcrumbs.breadcrumbsRibbon .mt-element-ribbon .ribbon-content {
+    font-size: 19px;
+}
+
+.insStart h1 {
+    font-size: 23px;
+}
+
+.page-header .topbar-actions .btn-group-img .btn>span {
+    display: inline-block !important;
+}
+
+.breadcrumbs.breadcrumbsRibbon ol.breadcrumb {
+    display: none;
+}
+
+.breadcrumbs.breadcrumbsRibbon .mt-element-ribbon.bg-grey-steel {
+    margin: 0 -15px;
+}
+
+.breadcrumbs.breadcrumbsRibbon .breadcrumbs {
+    padding-right: 0;
+}
+
+.page-content {
+    padding: 11px;
+}
+
+.portlet>.portlet-title>.nav-tabs.profileEditTabs {
+    float: left;
+}
+
+.nav-tabs.profileEditTabs>li {
+    float: none;
+}
+
+.feedbackPage .mt-element-step .step-line .mt-step-col {
+    padding: 15px 0;
+}
+
+.faceMocion div {
+    margin: 0 1px 3px 8px !important;
+}
+
+}
+
+
+@media (min-width: 768px){
+
+.page-header .topbar-actions .btn-group-img .btn>span {
+    display: inline-block !important;
+}
+
+.breadcrumbs.breadcrumbsRibbon ol.breadcrumb {
+    display: none;
+}
+
+.breadcrumbs.breadcrumbsRibbon .mt-element-ribbon.bg-grey-steel {
+    margin: 0 -15px;
+}
+
+.breadcrumbs.breadcrumbsRibbon .breadcrumbs {
+    padding-right: 0;
+}
+
+.feedbackPage .mt-element-step .step-line .mt-step-col {
+    padding: 15px 0;
+}
+
+}
+
+
+
+@media (min-width: 992px){
+
+.page-header .navbar .navbar-nav>li>a {
+    padding: 22px 25px;
+}
+
+.breadcrumbs.breadcrumbsRibbon ol.breadcrumb {
+    display: block;
+}
+
+.breadcrumbs.breadcrumbsRibbon .mt-element-ribbon.bg-grey-steel {
+    margin: 0;
+}
+
+.breadcrumbs.breadcrumbsRibbon .breadcrumbs {
+    padding-right: 6px;
+}
+
+.page-header .navbar-collapse .navbar-nav .more-dropdown:hover>a:after {
+    color: #000;
+}
+
+.feedbackPage .mt-element-step .step-line .mt-step-col {
+    padding: 30px 0;
+}
+
+.page-content {
+    padding-top: 50px;
+}
+
+}
+
+@media (min-width: 1200px){
+
+
+}
+
+
+
+
+

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--<![endif]-->
+    <!-- BEGIN HEAD -->
+    <head>
+        <meta charset="utf-8" />
+        <title>BestFit qBank</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta content="" name="description" />
+        <meta content="" name="author" />
+        <!-- BEGIN GLOBAL MANDATORY STYLES -->
+        <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+        <!-- END GLOBAL MANDATORY STYLES -->
+        <!-- BEGIN THEME GLOBAL STYLES -->
+        <link href="css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+        <link href="css/plugins.min.css" rel="stylesheet" type="text/css" />
+        <!-- END THEME GLOBAL STYLES -->
+        <!-- BEGIN THEME LAYOUT STYLES -->
+        <link href="css/layout.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/light.min.css" rel="stylesheet" type="text/css" id="style_color" />
+        <link href="css/custom.min.css" rel="stylesheet" type="text/css" />
+        <!-- END THEME LAYOUT STYLES -->
+        <link rel="shortcut icon" href="favicon.ico" />
+    </head>
+    <!-- END HEAD -->
+
+    <body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white">
+        <div class="page-wrapper">
+            <!-- BEGIN HEADER -->
+            <div class="page-header navbar navbar-fixed-top">
+                <!-- BEGIN HEADER INNER -->
+                <div class="page-header-inner ">
+                    <!-- BEGIN LOGO -->
+                    <div class="page-logo">
+                        <a href="">
+                            <img src="images/logo.png" alt="logo" class="logo-default" />
+                        </a>
+                        <div class="menu-toggler sidebar-toggler">
+                            <span></span>
+                        </div>
+                    </div>
+                    <!-- END LOGO -->
+                    <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+                    <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span></span>
+                    </a>
+                    <!-- END RESPONSIVE MENU TOGGLER -->
+                    <!-- BEGIN TOP NAVIGATION MENU -->
+                    <div class="top-menu">
+                        <ul class="nav navbar-nav pull-right">
+                            <li class="dropdown dropdown-user">
+                                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                    <span class="username"> Admin </span>
+                                    <i class="fa fa-angle-down"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-default">
+                                    <li>
+                                        <a href="login.html">
+                                            <i class="icon-key"></i> Log Out </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- END USER LOGIN DROPDOWN -->
+                        </ul>
+                    </div>
+                    <!-- END TOP NAVIGATION MENU -->
+                </div>
+                <!-- END HEADER INNER -->
+            </div>
+            <!-- END HEADER -->
+            <!-- BEGIN HEADER & CONTENT DIVIDER -->
+            <div class="clearfix"> </div>
+            <!-- END HEADER & CONTENT DIVIDER -->
+            <!-- BEGIN CONTAINER -->
+            <div class="page-container">
+                <!-- BEGIN SIDEBAR -->
+                <div class="page-sidebar-wrapper">
+                    <!-- BEGIN SIDEBAR -->
+                    <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+                    <!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+                    <div class="page-sidebar navbar-collapse collapse">
+                        <ul class="page-sidebar-menu  page-header-fixed " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" style="padding-top: 20px">
+                            <li class="heading">
+                                <h3 class="uppercase">MENU</h3>
+                            </li>
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link nav-toggle">
+                                    <i class="icon-home"></i>
+                                    <span class="title">Dashboard</span>
+                                    <span class="selected"></span>
+                                </a>
+                            </li>
+                            <li class="nav-item active open">
+                                <a href="add.html" class="nav-link nav-toggle">
+                                    <i class="icon-layers"></i>
+                                    <span class="title">Add Q</span>
+                                    <span class="selected"></span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="qbank.html" class="nav-link nav-toggle">
+                                    <i class="icon-puzzle"></i>
+                                    <span class="title">Q Bank</span>
+                                    <span class="selected"></span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="result.html" class="nav-link nav-toggle">
+                                    <i class="icon-bar-chart"></i>
+                                    <span class="title">Result</span>
+                                    <span class="selected"></span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- END SIDEBAR MENU -->
+                        <!-- END SIDEBAR MENU -->
+                    </div>
+                    <!-- END SIDEBAR -->
+                </div>
+                <!-- END SIDEBAR -->
+                <!-- BEGIN CONTENT -->
+                <div class="page-content-wrapper">
+                    <!-- BEGIN CONTENT BODY -->
+                    <div class="page-content">
+                        <div class="">
+                            <div class="textqpage">
+                                <div class="portlet light form-fit bordered">
+                                    <div class="portlet-title">
+                                        <div class="caption">
+                                            <span class="caption-subject font-green bold uppercase">ADD QUESTION</span>
+                                        </div>
+                                    </div>
+                                    <div class="portlet-body form">
+                                        <form action="#" id="form-username" class="form-horizontal form-bordered">
+                                            <div class="form-group" style="border-bottom: none;">
+                                                <label class="col-md-2 control-label">Enter Question*</label>
+                                                <div class="col-md-10">
+                                                    <textarea class="form-control autosizeme" rows="2" placeholder="How many planets..?"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">Enter Option One*</label>
+                                                <div class="col-md-10">
+                                                    <input type="text" class="form-control" placeholder="Option One">
+                                                </div>
+
+                                                <label class="col-md-2 control-label">Enter Option Two*</label>
+                                                <div class="col-md-10">
+                                                    <input type="text" class="form-control" placeholder="Option Two">
+                                                </div>
+
+                                                <label class="col-md-2 control-label">Enter Option Three*</label>
+                                                <div class="col-md-10">
+                                                    <input type="text" class="form-control" placeholder="Option Three">
+                                                </div>
+
+                                                <label class="col-md-2 control-label">Enter Option Four*</label>
+                                                <div class="col-md-10">
+                                                    <input type="text" class="form-control" placeholder="Option Four">
+                                                </div>
+
+                                                <label class="col-md-2 control-label">Select Correct Option*</label>
+                                                <div class="col-md-10">
+                                                    <select class="bs-select form-control">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                    </select>
+                                                </div>
+
+                                                <label class="col-md-2 control-label">Create New Category or <small>Select From List</small></label>
+                                                <div class="col-md-10">
+                                                    <input type="text" class="form-control" placeholder="Create Category">
+                                                </div>
+
+                                                <label class="col-md-2 control-label">Select Category*</label>
+                                                <div class="col-md-10">
+                                                    <select class="bs-select form-control">
+                                                        <option value="" hidden=""></option>
+                                                        <option>English</option>
+                                                        <option>Maths</option>
+                                                        <option>Science</option>
+                                                    </select>
+                                                </div>
+                                            </div>    
+                                            <div class="form-actions qsubmitbtn">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <button type="submit" class="btn red">
+                                                            <i class="fa fa-check"></i> Submit
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END CONTENT BODY -->
+                </div>
+                <!-- END CONTENT -->
+            </div>
+            <!-- END CONTAINER -->
+            <!-- BEGIN FOOTER -->
+            <div class="page-footer">
+                <div class="page-footer-inner"> 2019 &copy; All Rights Reserved.</a>
+                </div>
+                <div class="scroll-to-top">
+                    <i class="icon-arrow-up"></i>
+                </div>
+            </div>
+            <!-- END FOOTER -->
+        </div>
+        <!--[if lt IE 9]>
+        <script src="plugins/respond.min.js"></script>
+        <script src="plugins/excanvas.min.js"></script> 
+        <script src="plugins/ie8.fix.min.js"></script> 
+        <![endif]-->
+        <!-- BEGIN CORE PLUGINS -->
+        <script src="plugins/jquery.min.js" type="text/javascript"></script>
+        <script src="plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="plugins/js.cookie.min.js" type="text/javascript"></script>
+        <script src="plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+        <script src="plugins/jquery.blockui.min.js" type="text/javascript"></script>
+        <script src="plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+        <!-- END CORE PLUGINS -->
+        <script src="plugins/autosize/autosize.min.js" type="text/javascript"></script>
+        <!-- BEGIN THEME GLOBAL SCRIPTS -->
+        <script src="scripts/app.min.js" type="text/javascript"></script>
+        <!-- END THEME GLOBAL SCRIPTS -->
+        <!-- BEGIN THEME LAYOUT SCRIPTS -->
+        <script src="scripts/layout.min.js" type="text/javascript"></script>
+        <script src="scripts/demo.min.js" type="text/javascript"></script>
+        <script src="scripts/custom.js" type="text/javascript"></script>
+        <!-- END THEME LAYOUT SCRIPTS -->
+    </body>
+</html>
