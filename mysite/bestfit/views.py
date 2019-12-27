@@ -11,3 +11,17 @@ def index(request):
 
 def profileEdit(request):
     return render(request, 'profileEdit.html')
+
+
+def instructions(request):
+    return render(request, 'instructions.html')
+
+
+def sample_test(request):
+    return render(request, 'SampleTest.html')
+
+
+def feedback(request):
+    return render(request, 'feedback.html')
+
+
