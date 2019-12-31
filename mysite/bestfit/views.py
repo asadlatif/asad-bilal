@@ -6,7 +6,7 @@ def profile(request):
 
 
 def index(request):
-    return render(request, 'profile.html')
+    return render(request, 'index.html')
 
 
 def profileEdit(request):
@@ -23,5 +23,9 @@ def sample_test(request):
 
 def feedback(request):
     return render(request, 'feedback.html')
+
+
+def lockscreen(request):
+    return render(request, 'lockScreern.html')
 
 
