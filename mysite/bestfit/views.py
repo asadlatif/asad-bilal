@@ -29,3 +29,7 @@ def lockscreen(request):
     return render(request, 'lockScreern.html')
 
 
+def register(request):
+    return render(request, 'register.html')
+
+

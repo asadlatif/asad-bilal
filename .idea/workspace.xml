@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3e03a84-127b-40e2-8355-97095c2e34a4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/mysite/bestfit/templates/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/bestfit/templates/bestfitmaster.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/bestfit/templates/bestfitmaster.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/bestfit/templates/lockScreern.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/bestfit/templates/lockScreern.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/bestfit/templates/profileEdit.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/bestfit/templates/profileEdit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/bestfit/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/bestfit/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/bestfit/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/bestfit/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/bestfit/templates/sampleTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/bestfit/templates/sampleTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/bestfit/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/bestfit/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/bestfit/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/bestfit/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysite/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,17 +39,17 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mysite/bestfit/templates" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Asad Latif\Desktop\BestFit_template\mysite\bestfit\templates" />
-      <recent name="C:\Users\Asad Latif\Desktop\BestFit_template\mysite\bestfit\static\bestfit" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Asad Latif\Desktop\BestFit_template\mysite\bestfit\templates" />
       <recent name="C:\Users\Asad Latif\Desktop\BestFit_template\mysite\bestfit\static\bestfit\sass\bootstrap" />
       <recent name="C:\Users\Asad Latif\Desktop\BestFit_template\templates" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Asad Latif\Desktop\BestFit_template\mysite\bestfit\templates" />
+      <recent name="C:\Users\Asad Latif\Desktop\BestFit_template\mysite\bestfit\static\bestfit" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -79,9 +82,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1577694254005" />
-    <state x="379" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1577781384670">
+    <state x="379" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1577866187541">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1577781384670" />
+    <state x="379" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1577866187541" />
   </component>
 </project>
