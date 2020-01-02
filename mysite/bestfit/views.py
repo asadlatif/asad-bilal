@@ -18,7 +18,8 @@ def instructions(request):
 
 
 def sample_test(request):
-    return render(request, 'SampleTest.html')
+    questions = test.objects.all()
+    return render(request, 'SampleTest.html',{ "Test":questions })
 
 
 def feedback(request):

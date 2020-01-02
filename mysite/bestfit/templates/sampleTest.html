@@ -34,26 +34,26 @@
                                                                 <div class="mt-element-ribbon bg-grey-steel">
                                                                     <div class="ribbon ribbon-border-hor ribbon-clip ribbon-color-success uppercase">
                                                                         <div class="ribbon-sub ribbon-clip"></div> Question 1 </div>
-                                                                    <p class="ribbon-content">{% question.title %}</p>
+                                                                    <p class="ribbon-content">{% test.title %}</p>
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <label></label>
                                                                     <div class="mt-radio-list">
-                                                                        <label class="mt-radio mt-radio-outline"> {% question.option1 %}
+                                                                        <label class="mt-radio mt-radio-outline"> {% test.option1 %}
                                                                             <input type="radio" value="1" name="{% question.id %}">
                                                                             <span></span>
                                                                         </label>
-                                                                        <label class="mt-radio mt-radio-outline"> {% question.option2 %}
-                                                                            <input type="radio" value="1" name="{% question.id %}">
-                                                                            <span></span>
-                                                                        </label>
-                                                                        <label class="mt-radio mt-radio-outline">
-                                                                        {% question.option3 %}
+                                                                        <label class="mt-radio mt-radio-outline"> {% test.option2 %}
                                                                             <input type="radio" value="1" name="{% question.id %}">
                                                                             <span></span>
                                                                         </label>
                                                                         <label class="mt-radio mt-radio-outline">
-                                                                        {% question.option4 %}
+                                                                        {% test.option3 %}
+                                                                            <input type="radio" value="1" name="{% question.id %}">
+                                                                            <span></span>
+                                                                        </label>
+                                                                        <label class="mt-radio mt-radio-outline">
+                                                                        {% test.option4 %}
                                                                             <input type="radio" value="1" name="{% question.id %}">
                                                                             <span></span>
                                                                         </label>
