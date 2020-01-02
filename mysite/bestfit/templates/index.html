@@ -51,7 +51,8 @@
         <!-- BEGIN LOGIN -->
         <div class="content">
             <!-- BEGIN LOGIN FORM -->
-            <form class="login-form" action="index" method="post">
+            <form class="login-form" action="{% url 'profile' %}" method="post">
+                {% csrf_token %}
                 <h3 class="form-title">Login to your account</h3>
                 <div class="alert alert-danger display-hide">
                     <button class="close" data-close="alert"></button>
@@ -59,7 +60,7 @@
                 </div>
                 <div class="form-group">
                     <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
-                    <label class="control-label visible-ie8 visible-ie9">Username</label>
+                    <label class="control-label visible-ie8 visible-ie9">user name</label>
                     <div class="input-icon">
                         <i class="fa fa-user"></i>
                         <input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="Username" name="username" /> </div>
@@ -70,14 +71,20 @@
                         <i class="fa fa-lock"></i>
                         <input class="form-control placeholder-no-fix" type="password" autocomplete="off" placeholder="Password" name="password" /> </div>
                 </div>
+                  <div class="form-group">
+                    <label class="control-label visible-ie8 visible-ie9">email</label>
+                    <div class="input-icon">
+                        <i class="fa fa-lock"></i>
+                        <input class="form-control placeholder-no-fix" type="email" autocomplete="off" placeholder="email" name="email" /> </div>
+                </div>
                 <div class="form-actions">
                     <label class="rememberme mt-checkbox mt-checkbox-outline">
                         <input type="checkbox" name="remember" value="1" /> Remember me
                         <span></span>
                     </label>
-                    <a href="profile" class="temp">Login
-                        <!-- <button type="submit" class="btn green pull-right"> Login </button> -->
-                    </a>
+<!--                    <a href="" class="temp">Login-->
+                        <button type="submit" class="btn green pull-right"> Login </button>
+<!--                    </a>-->
                 </div>
                 <div class="login-options">
                     <h4>Or login with</h4>
