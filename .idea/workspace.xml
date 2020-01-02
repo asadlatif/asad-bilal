@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f3e03a84-127b-40e2-8355-97095c2e34a4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/bestfit/templates/sampleTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/bestfit/templates/sampleTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/bestfit/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/bestfit/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="f3e03a84-127b-40e2-8355-97095c2e34a4" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
