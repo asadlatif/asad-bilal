@@ -15,11 +15,4 @@ class Profile(models.Model):
         return f' {self.user.username} Profile'
 
 
-class Test(models.Model):
-    category = models.CharField(max_length=64, choices=subjects,default=None)
-    question = models.CharField(max_length=255)
-    A = models.CharField(max_length=255)
-    B = models.CharField(max_length=255)
-    C = models.CharField(max_length=255)
-    D = models.CharField(max_length=255)
-    answer_correct = models.CharField(max_length=255, default=None)
+
