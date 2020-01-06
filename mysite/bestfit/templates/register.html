@@ -69,84 +69,46 @@
                                                             <div class="tab-content">
                                                                 <!-- PERSONAL INFO TAB -->
                                                                 <div class="tab-pane active" id="tab_1_1">
-                                                                    <form role="form" action="#">
+                                                                    <form method="post">
+                                                                        {% csrf_token %}
                                                                         <div class="form-group">
                                                                             <label class="control-label">First Name</label>
-                                                                            <input type="text" placeholder="John" class="form-control" /> </div>
+                                                                            <input type="text" placeholder="John" class="form-control" name="first_name"/> </div>
                                                                         <div class="form-group">
                                                                             <label class="control-label">Last Name</label>
-                                                                            <input type="text" placeholder="Doe" class="form-control" /> </div>
+                                                                            <input type="text" placeholder="Doe" class="form-control" name="last_name"/> </div>
                                                                         <div class="form-group">
                                                                             <label class="control-label">Mobile Number</label>
-                                                                            <input type="text" placeholder="0333 1234567" class="form-control" /> </div>
+                                                                            <input type="text" placeholder="0333 1234567" class="form-control" name="mobile"/> </div>
                                                                         <div class="form-group">
                                                                             <label class="control-label">Email</label>
-                                                                            <input type="email" placeholder="abc@xyz.com" class="form-control" /> </div>
+                                                                            <input type="email" placeholder="abc@xyz.com" class="form-control" name="email" /> </div>
                                                                         <div class="form-group">
-                                                                            <label class="control-label">Date of Birth</label>
-                                                                            <input type="date" placeholder="Web Developer" class="form-control" /> </div>
+                                                                            <label class="control-label">Password</label>
+                                                                            <input type="password"  class="form-control" name="password" /> </div>
+<!--                                                                        <div class="form-group">-->
+<!--                                                                            <label class="control-label">Address</label>-->
+<!--                                                                            <textarea class="form-control" rows="3" placeholder="Karachi Pakistan" name="address"> </textarea>-->
+<!--                                                                        </div>-->
                                                                         <div class="form-group">
-                                                                            <label class="control-label">Address</label>
-                                                                            <textarea class="form-control" rows="3" placeholder="House No. "></textarea>
-                                                                        </div>
-                                                                        <div class="form-group">
-                                                                            <label class="control-label">Website Url</label>
-                                                                            <input type="text" placeholder="http://www.mywebsite.com" class="form-control" /> </div>
+                                                                               <label class="control-label">Education</label>
+                                                                            <select name="education">
+                                                                          <option value="male">Matriculation</option>
+                                                                          <option value="female">Intermediate</option>
+                                                                          <option value="female">Bachelor</option>
+                                                                          <option value="female">PHD</option>
+
+                                                                             </select>
+
+
+
                                                                         <div class="margiv-top-10">
-                                                                            <a href="javascript:;" class="btn green"> Register  </a>
+                                                                            <a href="javascript:;" class="btn green"> <button type="submit" name="submit"> Register </button>  </a>
                                                                             <a href="profile" class="btn default"> Cancel </a>
                                                                         </div>
                                                                     </form>
                                                                 </div>
                                                                 <!-- END PERSONAL INFO TAB -->
-                                                                <!-- CHANGE AVATAR TAB -->
-                                                                <div class="tab-pane" id="tab_1_2">
-                                                                    <p> Upload profile avatar. </p>
-                                                                    <form action="#" role="form">
-                                                                        <div class="form-group">
-                                                                            <div class="fileinput fileinput-new" data-provides="fileinput">
-                                                                                <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
-                                                                                    <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="" /> </div>
-                                                                                <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"> </div>
-                                                                                <div>
-                                                                                    <span class="btn default btn-file">
-                                                                                        <span class="fileinput-new"> Select image </span>
-                                                                                        <span class="fileinput-exists"> Change </span>
-                                                                                        <input type="file" name="..."> </span>
-                                                                                    <a href="javascript:;" class="btn default fileinput-exists" data-dismiss="fileinput"> Remove </a>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="clearfix margin-top-10">
-                                                                                <span class="label label-danger">NOTE! </span>
-                                                                                <span style="display: block;">Attached image thumbnail is supported in Latest Firefox, Chrome, Opera, Safari and Internet Explorer 10 only </span>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="margin-top-10">
-                                                                            <a href="javascript:;" class="btn green"> Submit </a>
-                                                                            <a href="profile" class="btn default"> Cancel </a>
-                                                                        </div>
-                                                                    </form>
-                                                                </div>
-                                                                <!-- END CHANGE AVATAR TAB -->
-                                                                <!-- CHANGE PASSWORD TAB -->
-                                                                <div class="tab-pane" id="tab_1_3">
-                                                                    <form action="#">
-                                                                        <div class="form-group">
-                                                                            <label class="control-label">Current Password</label>
-                                                                            <input type="password" class="form-control" /> </div>
-                                                                        <div class="form-group">
-                                                                            <label class="control-label">New Password</label>
-                                                                            <input type="password" class="form-control" /> </div>
-                                                                        <div class="form-group">
-                                                                            <label class="control-label">Re-type New Password</label>
-                                                                            <input type="password" class="form-control" /> </div>
-                                                                        <div class="margin-top-10">
-                                                                            <a href="javascript:;" class="btn green"> Change Password </a>
-                                                                            <a href="profile" class="btn default"> Cancel </a>
-                                                                        </div>
-                                                                    </form>
-                                                                </div>
-                                                                <!-- END CHANGE PASSWORD TAB -->
                                                             </div>
                                                         </div>
                                                     </div>
