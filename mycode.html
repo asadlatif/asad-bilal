@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
+   
+</head>
+<body >
+ <div>
+    <span style="float: right;"><strong>Timmer:</strong><span id="timer"></span></span>
+ </div>
+    <div>
+        Question 1 
+        <p class="ribbon-content">Choose the word that is most nearly similar in meaning to the word in capital letters?</p>
+   
+    <div class="form-group">
+        <label></label>
+        <div class="mt-radio-list">
+            <input type="radio" value="1" name="test">
+            <label class="mt-radio mt-radio-outline"> starving
+                <span></span>
+            </label><br>
+            <input type="radio" value="1" name="test" >
+            <label class="mt-radio mt-radio-outline"> implore
+                <span></span>
+            </label><br>
+            <input type="radio" value="1" name="test" >
+            <label class="mt-radio mt-radio-outline">
+            weak
+            <span></span>
+            </label><br>
+        </div>
+    </div>
+</div><br>
+<button onclick="answertime()">Next</button>
+ <button onclick="savetimmer()"> Submit</button>
+</div>
+</div>
+</body>
+<script>
+  
+    var currentTime = 0;
+    var startTime =0;
+    var timmerleft;
+    var savet,quet=0;
+    var quettime=60;
+    
+
+
+function convertSecond(s){
+    var min = floor(s/60);
+    var sec = s % 60;
+    savet = nf(sec,2);
+    return nf(min,2) + ':' + nf(sec,2);
+}
+
+    
+ 
+function setup(){
+    noCanvas();
+    currentTime = 0;
+    var time = select('#timer');
+    timmerleft = 3600;
+    time.html(convertSecond(timmerleft - currentTime));
+    
+    var interval = setInterval(timeIt,1000);
+  
+    
+    
+ 
+    function timeIt()
+    {
+            currentTime = floor((millis() - startTime)/1000);
+        
+            time.html(convertSecond(timmerleft - currentTime))
+           
+            if(currentTime == timmerleft){
+                clearInterval(interval);
+            
+            }
+
+        
+    }
+    
+}
+
+function setup1(){
+    noCanvas();
+    currentTime = 0;
+    quettime = 60;
+    console.log(convertSecond(quettime - currentTime));
+    var interval = setInterval(timeIt1,1000)
+    
+    function timeIt1(){
+       // counter++;
+       currentTime = floor((millis() - startTime)/1000);
+        console.log(convertSecond(quettime - currentTime))
+        if(currentTime == quettime){
+            clearInterval(interval);
+        }
+    }
+}
+
+function answertime(){
+    ans = convertSecond(currentTime);
+    console.log(ans);
+    sessionStorage.setItem('taken' , 'ans');
+    quettime=60
+}
+
+function savetimmer(){
+    sessionStorage.setItem('timetaken','convertSecond(currentTime)')
+    //console.log()
+    display(convertSecond(currentTime))
+}
+
+function display(tim){
+    alert("you solve this in "+tim)
+}
+
+</script>
+</html>
