@@ -86,7 +86,7 @@
                                                 <i class="icon-volume-2"></i> Instructions </a>
                                         </li>
                                         <li>
-                                            <a href="sampleTest">
+                                            <a href="Test">
                                                 <i class="icon-bulb"></i> Sample Test
                                             </a>
                                         </li>
@@ -193,7 +193,11 @@
         <!-- BEGIN THEME LAYOUT SCRIPTS -->
         <script src=" {% static 'bestfit/assets/layouts/layout5/scripts/layout.min.js' %}" type="text/javascript"></script>
         <script src=" {% static 'bestfit/assets/layouts/global/scripts/quick-sidebar.min.js' %}" type="text/javascript"></script>
+
         <!-- END THEME LAYOUT SCRIPTS -->
+      {%block script_block%}
+        {% endblock%}
+
     </body>
 
 </html>
