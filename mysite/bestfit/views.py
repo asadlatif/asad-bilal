@@ -6,6 +6,8 @@ from .models import Registerations, ProfileEdit
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import redirect
+from django.db import connection
+
 
 
 @login_required()
@@ -17,11 +19,10 @@ def index(request):
     if request.POST:
         user_e = request.POST.get("email")
         user_p = request.POST.get("password")
-        user = Registerations()
-        if user.email == user_e and user.password == user_p:
-            return render(request, 'profile.html')
-        else:
-            return redirect('register')
+        with connection.cursor() as curser:
+            curser.execute("select first_name from bestfit_registerations where email='"+user_e+"' and password ='"+user_p+"'")
+            user=curser
+            return render(request,"profile.html",{"user":user})
     else:
         return render(request, 'index.html')
 # if request.POST:
