@@ -30,7 +30,6 @@ from django.db import connection
 #  else:
 #      return render(request, 'profile.html')
 
-
 @login_required()
 def profile(request):
     return render(request, 'profile.html')
@@ -41,11 +40,14 @@ def index(request):
         user_e = request.POST.get("email")
         user_p = request.POST.get("password")
         with connection.cursor() as curser:
-            curser.execute("select first_name from bestfit_registerations where email='"+user_e+"' and password ='"+user_p+"'")
-            user=curser
-            return render(request,"profile.html",{"user":user})
-    else:
-        return render(request, 'index.html')
+            curser.execute("select * from bestfit_registerations where email='"+user_e+"' and password ='"+user_p+"'")
+            print(curser.execute("select * from bestfit_registerations where email='"+user_e+"' and password ='"+user_p+"'"))
+            if curser:
+                return render(request, "profile.html")
+            else:
+                return render(request, "index.html")
+    # else:
+    #     return render(request, 'index.html')
 # if request.POST:
 #     To_email = request.POST.get('email', '')
 #     if To_email:
@@ -99,7 +101,20 @@ def register(request):
         user_reg.password = request.POST.get("password")
         user_reg.education = request.POST.get("education")
         user_reg.save()
-    return render(request, 'register.html')
+        To_email = request.POST.get('email', '')
+        if To_email:
+            try:
+                send_mail("test pin", "your pin for the test is 45635", 'raconnectors@gmail.com', [To_email])
+            except BadHeaderError:
+                return HttpResponse('Invalid header found.')
+
+        else:
+
+           return render(request,  'registration.html')
+
+        return  redirect("index.html")
+    else:
+        return render(request, 'register.html')
 
 
 @login_required
