@@ -5,29 +5,39 @@ from django.core.mail import EmailMessage
 from .models import Registerations, ProfileEdit
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.shortcuts import redirect
 
-@login_required
+
+@login_required()
 def profile(request):
     return render(request, 'profile.html')
 
 
 def index(request):
-    if request.user.is_authenticated():
-
-    # if request.POST:
-    #     To_email = request.POST.get('email', '')
-    #     if To_email:
-    #         try:
-    #             send_mail("test pin", "your pin for the test is 45635", 'raconnectors@gmail.com', [To_email])
-    #         except BadHeaderError:
-    #             return HttpResponse('Invalid header found.')
-    #         return HttpResponse('very good')
-    #     else:
-    #         return HttpResponse('Make sure all fields are entered and valid.')
-    # else:
+    if request.POST:
+        user_e = request.POST.get("email")
+        user_p = request.POST.get("password")
+        user = Registerations()
+        if user.email == user_e and user.password == user_p:
+            return render(request, 'profile.html')
+        else:
+            return redirect('register')
+    else:
         return render(request, 'index.html')
+# if request.POST:
+#     To_email = request.POST.get('email', '')
+#     if To_email:
+#         try:
+#             send_mail("test pin", "your pin for the test is 45635", 'raconnectors@gmail.com', [To_email])
+#         except BadHeaderError:
+#             return HttpResponse('Invalid header found.')
+#         return HttpResponse('very good')
+#     else:
+#         return HttpResponse('Make sure all fields are entered and valid.')
+# else:
 
 
+# @login_required()
 def sample_test(request):
     return render(request, 'SampleTest.html')
 
@@ -38,7 +48,6 @@ def instructions(request):
 
 def feedback(request):
     return render(request, 'feedback.html')
-
 
 
 def lockscreen(request):
@@ -57,7 +66,7 @@ def register(request):
         user_reg.save()
     return render(request, 'register.html')
 
-
+@login_required
 def proifleEdit(request):
     if request.POST:
         profileedit = ProfileEdit()
