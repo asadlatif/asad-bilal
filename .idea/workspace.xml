@@ -4,6 +4,9 @@
 <<<<<<< HEAD
     <list default="true" id="f3e03a84-127b-40e2-8355-97095c2e34a4" name="Default Changelist" comment="" />
 =======
+<<<<<<< HEAD
+    <list default="true" id="f3e03a84-127b-40e2-8355-97095c2e34a4" name="Default Changelist" comment="" />
+=======
     <list default="true" id="f3e03a84-127b-40e2-8355-97095c2e34a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/BestFit_template.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BestFit_template.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -13,6 +16,7 @@
       <change beforePath="$PROJECT_DIR$/mysite/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysite/settings.py" afterDir="false" />
     </list>
 >>>>>>> a0ba6bd392dcc744ea96a30daf1a66d574d14272
+>>>>>>> 54375ef37876c6c144ca1027632f9084bd78a681
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
