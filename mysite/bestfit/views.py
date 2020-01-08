@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.core.mail import BadHeaderError, send_mail
 from django.http import HttpResponse
 from django.core.mail import EmailMessage
-
+from django.db import connection
 
 def profile(request):
  if request.POST:
@@ -11,14 +11,6 @@ def profile(request):
         try:
 
 
-         # mail_subject = 'Active a sua conta.'
-         # message = "message"
-         #
-         #
-         # email = EmailMessage(
-         # mail_subject, message, to=[To_email]
-         #     )
-         # email.send()
           send_mail("test pin","your pin for the test is 45635",'raconnectors@gmail.com', [To_email])
         except BadHeaderError:
             return HttpResponse('Invalid header found.')
@@ -50,8 +42,23 @@ def instructions(request):
     return render(request, 'instructions.html')
 
 
-def sample_test(request):
-    return render(request, 'SampleTest.html')
+def Test(request):
+    with connection.cursor() as curser:
+        curser.execute('select * from besfit_questions ')
+        questions=dictfetchall(curser)
+
+
+
+    return render(request, 'Test.html',{ "questions":questions })
+
+def dictfetchall(cursor):
+
+    "Return all rows from a cursor as a dict"
+    columns = [col[0] for col in cursor.description]
+    return [
+        dict(zip(columns, row))
+        for row in cursor.fetchall()
+    ]
 
 
 def feedback(request):
@@ -60,5 +67,9 @@ def feedback(request):
 
 def lockscreen(request):
     return render(request, 'lockScreern.html')
+
+
+def register(request):
+    return render(request, 'register.html')
 
 

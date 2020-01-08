@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="f3e03a84-127b-40e2-8355-97095c2e34a4" name="Default Changelist" comment="" />
+=======
+<<<<<<< HEAD
+    <list default="true" id="f3e03a84-127b-40e2-8355-97095c2e34a4" name="Default Changelist" comment="" />
+=======
     <list default="true" id="f3e03a84-127b-40e2-8355-97095c2e34a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/BestFit_template.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BestFit_template.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -9,6 +15,8 @@
       <change beforePath="$PROJECT_DIR$/mysite/bestfit/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/bestfit/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysite/settings.py" afterDir="false" />
     </list>
+>>>>>>> a0ba6bd392dcc744ea96a30daf1a66d574d14272
+>>>>>>> 54375ef37876c6c144ca1027632f9084bd78a681
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,18 +44,22 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+<<<<<<< HEAD
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../asad-project" />
+=======
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Admin_bestfit/bilal" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+>>>>>>> a0ba6bd392dcc744ea96a30daf1a66d574d14272
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Asad Latif\Desktop\BestFit_template\mysite\bestfit\templates" />
-      <recent name="C:\Users\Asad Latif\Desktop\BestFit_template\mysite\bestfit\static\bestfit" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Asad Latif\Desktop\BestFit_template\mysite\bestfit\templates" />
       <recent name="C:\Users\Asad Latif\Desktop\BestFit_template\mysite\bestfit\static\bestfit\sass\bootstrap" />
       <recent name="C:\Users\Asad Latif\Desktop\BestFit_template\templates" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Asad Latif\Desktop\BestFit_template\mysite\bestfit\templates" />
+      <recent name="C:\Users\Asad Latif\Desktop\BestFit_template\mysite\bestfit\static\bestfit" />
     </key>
   </component>
   <component name="RunManager">
@@ -104,6 +116,16 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+<<<<<<< HEAD
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1577949702088">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1577949702088" />
+    <state x="379" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1577949649918">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1577949649918" />
+=======
     <state x="137" y="61" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577907959287">
       <screen x="0" y="40" width="1366" height="728" />
     </state>
@@ -180,5 +202,6 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
+>>>>>>> a0ba6bd392dcc744ea96a30daf1a66d574d14272
   </component>
 </project>
