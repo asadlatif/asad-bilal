@@ -41,7 +41,7 @@ def index(request):
         user_p = request.POST.get("password")
         with connection.cursor() as curser:
             curser.execute("select * from bestfit_registerations where email='"+user_e+"' and password ='"+user_p+"'")
-            print(curser.execute("select * from bestfit_registerations where email='"+user_e+"' and password ='"+user_p+"'"))
+            print(curser.execute("select * from bestfit_registerations where email='"+user_e+"' and password ='"+user_p+""))
             if curser:
                 return render(request, "profile.html")
             else:
