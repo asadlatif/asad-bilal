@@ -82,7 +82,7 @@ DATABASES = {
         'HOSt': "localhost",
         'NAME': "bestfit_db",
         'USER': "postgres",
-        'PASSWORD': "1234"
+        'PASSWORD': "admin"
     }
 }
 

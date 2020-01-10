@@ -36,7 +36,7 @@
                                                                 <div class="mt-element-ribbon bg-grey-steel">
                                                                     <div class="ribbon ribbon-border-hor ribbon-clip ribbon-color-success uppercase">
                                                                         <div class="ribbon-sub ribbon-clip"></div> Question 1 </div>
-                                                                    <p class="ribbon-content"  type="hidden" id="[{{ question_obj.id }}]">{{ question_obj.question }}</p>
+                                                                    <p class="ribbon-content"  id="{{ question_obj.id }}">{{ question_obj.question }}</p>
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <label></label>
@@ -58,18 +58,19 @@
                                                                         {{ question_obj.D }}
                                                                             <input type="radio" value="D" name="{{ question.id }}">
                                                                             <span></span>
+                                                                             <div class='button' id='next'><a href='#'>Next</a></div>
+                                                                             <div class='button' id='prev'><a href='#'>Prev</a></div>
                                                                         </label>
                                                                     </div>
                                                                 </div>
                                             {% endfor %}
-                                                                <a class="npBtn" href="" style="float:right;"> Submit </a>
+
                                                             </div>
                                 <button type="submit" id="submit" class="btn btn-primary btn-sm pull-right">Submit</button>
-            <div class='button' id='next'><a href='#'>Next</a></div>
-            <div class='button' id='prev'><a href='#'>Prev</a></div>
+
                                     </div>
 
-\
+
 
                         </div>
                     </div>
@@ -84,7 +85,7 @@
 <script>
         //scripts for next-prev button
         (function() {
-          var questions = document.getElementById('[{{ question_obj.id }}]');
+          var questions = document.getElementById({{ question_obj.id }});
           //console.log(questions);
           var questionCounter = 0; //Tracks question number
           var quiz = $('#question-div'); //Quiz div object
@@ -141,9 +142,9 @@
           // Displays next requested element
           function displayNext() {
             quiz.fadeOut(function() {
-              $('[{{ question_obj.id }}]').remove();
+              $({{ question_obj.id }}).remove();
 
-              if(questionCounter < questions.length){
+              if(questionCounter > questions.length){
                 var nextQuestion = createQuestionElement(questionCounter);
                 quiz.append(nextQuestion).fadeIn();
 
