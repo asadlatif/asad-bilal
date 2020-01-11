@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Document</title>
+   
+</head>
+<body >
+    <h4>Time:</h4>
+ <div id = "timer">
+ </div>
+ <br>
+    <div>
+        Question 1 
+        <p class="ribbon-content">Choose the word that is most nearly similar in meaning to the word in capital letters?</p>
+   
+    <div class="form-group">
+        <label></label>
+        <div class="mt-radio-list">
+            <input type="radio" value="1" name="test">
+            <label class="mt-radio mt-radio-outline"> starving
+                <span></span>
+            </label><br>
+            <input type="radio" value="1" name="test" >
+            <label class="mt-radio mt-radio-outline"> implore
+                <span></span>
+            </label><br>
+            <input type="radio" value="1" name="test" >
+            <label class="mt-radio mt-radio-outline">
+            weak
+            <span></span>
+            </label><br>
+        </div>
+    </div>
+</div><br>
+<button onclick="answertime()">Next</button>
+ <button onclick="savetimmer()"> Submit</button>
+</div>
+</div>
+</body>
+<script type ="text/javascript">
+    var local,anstime,clock,counter=0,timetaken=0;
+
+    
+    clock = setInterval(timeclock,1000);
+  
+    function timeclock(){
+        var d = new Date();
+        local = d.toLocaleTimeString();
+        document.getElementById('timer').innerHTML = local;
+        counter++;
+        if(counter==3600){
+            alert('timeout');
+            clearInterval(clock);
+        }
+    }
+    function savetimmer(){
+        clearInterval(clock);
+    }
+
+    var ans = setInterval(ansclock,1000);
+
+    function ansclock(){
+        var a = new Date();
+        anstime = a.toLocaleTimeString();
+        timetaken++;
+        if(timetaken == 300){
+            clearInterval(ans);
+            timetaken = 0;
+            ans = setInterval(ansclock,1000);
+            //alert('you are wated too much time in this question')
+        }
+        //console.log(local);
+        //console.log(clock);
+    }
+    function convertSecond(s){
+    var min = Math.floor(s/60);
+    var sec = s % 60;
+    var r = min +":" + sec;
+    return r;
+}
+    function answertime(){
+        console.log(convertSecond(timetaken));
+        clearInterval(ans);
+        timetaken = 0;
+        anstime = setInterval(ansclock,1000);
+    }
+
+    /* var currentTime2 = 0;
+    var startTime =0,st;
+    var timmerleft;
+    var quettime=60;
+    var i2;
+
+function timeIt1(){}
+
+function convertSecond(s){
+    var min = floor(s/60);
+    var sec = s % 60;
+    //savet = nf(sec,2);
+    return nf(min,2) + ':' + nf(sec,2);
+}
+function setup(){
+    noCanvas();
+    currentTime = 0;
+    quettime = 60;
+    var time = select('#timer');
+    timmerleft = 3600;
+    time.html(convertSecond(timmerleft - currentTime));
+    var interval = setInterval(timeIt,1000);
+     i2 = setInterval(timeIt1,1000)
+    //console.log(i2);
+    function timeIt()
+    {
+            currentTime = floor((millis() - startTime)/1000);
+        
+            time.html(convertSecond(timmerleft - currentTime))
+           
+            if(currentTime == timmerleft){
+                clearInterval(interval);
+                alert("Time Up")
+            }
+    }
+    function timeIt1(){
+            st=0;
+            currentTime2 = floor((millis() - st)/1000);
+            //st++;
+            //console.log(convertSecond(quettime-currentTime2))
+            console.log(convertSecond(currentTime2))
+            if(quettime == currentTime2){
+                clearInterval(i2);
+                alert("Time Up")
+                //setInterval(timeIt1,0)
+            }
+    }
+}
+function answertime(){
+    console.log(convertSecond(currentTime2));
+    quettime = 60;
+    currentTime2 = 0;
+    clearInterval(i2);
+    i2 = setInterval(setup.timeIt1,1000)
+}
+
+function savetimmer(){
+    //sessionStorage.setItem('timetaken',convertSecond(currentTime))
+    //console.log()
+   console.log(convertSecond(currentTime))
+  // clearInterval(interval)
+} */
+
+</script>
+</html>
