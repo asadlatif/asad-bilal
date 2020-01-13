@@ -33,10 +33,16 @@
                             <div class="portlet-body" id="question-div">
                                         <div  class="current question">
                                             {% for question_obj in questions %}
+<!--                                            {% for num in question_obj %}-->
+<!--                                                object = num-->
+<!--                                                 new = id(object)-->
+<!--                                            {% endfor %}-->
+
+
                                                                 <div class="mt-element-ribbon bg-grey-steel">
                                                                     <div class="ribbon ribbon-border-hor ribbon-clip ribbon-color-success uppercase">
                                                                         <div class="ribbon-sub ribbon-clip"></div> Question 1 </div>
-                                                                    <p class="ribbon-content"  id="{{ question_obj.id }}">{{ question_obj.question }}</p>
+                                                                    <p type="hidden" class="ribbon-content"  id="{{ question_obj.id }}"> {{ question_obj.question }}</p>
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <label></label>
@@ -63,6 +69,7 @@
                                                                         </label>
                                                                     </div>
                                                                 </div>
+
                                             {% endfor %}
 
                                                             </div>
@@ -80,12 +87,10 @@
 {% endblock %}
 {%block script_block%}
 
-
-
 <script>
         //scripts for next-prev button
         (function() {
-          var questions = document.getElementById({{ question_obj.id }});
+          var questions = document.getElementById('1');
           //console.log(questions);
           var questionCounter = 0; //Tracks question number
           var quiz = $('#question-div'); //Quiz div object
@@ -142,9 +147,9 @@
           // Displays next requested element
           function displayNext() {
             quiz.fadeOut(function() {
-              $({{ question_obj.id }}).remove();
+              $('1').remove();
 
-              if(questionCounter > questions.length){
+              if(questionCounter < questions.length){
                 var nextQuestion = createQuestionElement(questionCounter);
                 quiz.append(nextQuestion).fadeIn();
 
@@ -166,6 +171,7 @@
 
         })();
 </script>
+
 
         {% endblock %}
 

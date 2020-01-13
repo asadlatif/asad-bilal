@@ -30,7 +30,7 @@ from django.db import connection
 #  else:
 #      return render(request, 'profile.html')
 
-@login_required()
+
 def profile(request):
     return render(request, 'profile.html')
 
@@ -41,13 +41,13 @@ def index(request):
         user_p = request.POST.get("password")
         with connection.cursor() as curser:
             curser.execute("select * from bestfit_registerations where email='"+user_e+"' and password ='"+user_p+"'")
-            print(curser.execute("select * from bestfit_registerations where email='"+user_e+"' and password ='"+user_p+""))
+
             if curser:
                 return render(request, "profile.html")
             else:
                 return render(request, "index.html")
-    # else:
-    #     return render(request, 'index.html')
+    else:
+        return render(request, 'index.html')
 # if request.POST:
 #     To_email = request.POST.get('email', '')
 #     if To_email:
@@ -64,7 +64,7 @@ def index(request):
 def instructions(request):
     return render(request, 'instructions.html')
 
-@login_required()
+
 def Test(request):
     with connection.cursor() as curser:
         curser.execute('select * from besfit_questions ')
@@ -82,7 +82,6 @@ def dictfetchall(cursor):
     ]
 
 
-@login_required()
 def feedback(request):
     return render(request, 'feedback.html')
 
@@ -117,7 +116,7 @@ def register(request):
         return render(request, 'register.html')
 
 
-@login_required
+
 def proifleEdit(request):
     if request.POST:
         profileedit = ProfileEdit()
